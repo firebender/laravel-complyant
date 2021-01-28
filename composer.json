@@ -12,5 +12,16 @@
             "email": "firebender.me@gmail.com"
         }
     ],
-    "require": {}
+    "autoload": {
+        "psr-4": {
+            "FireBender\\Laravel\\Complyant\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "FireBender\\Laravel\\Complyant\\Providers\\PackageServiceProvider"
+            ]
+        }
+    }
 }

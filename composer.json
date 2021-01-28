@@ -28,5 +28,8 @@
                 "FireBender\\Laravel\\Complyant\\Providers\\PackageServiceProvider"
             ]
         }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^7.2"
     }
 }

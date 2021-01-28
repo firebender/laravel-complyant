@@ -4,14 +4,14 @@ namespace FireBender\Laravel\Complyant\Console\Commands;
 
 use Illuminate\Console\Command;
 
-class CreateApplicantCommand extends BaseCommand
+class CreateApplicationCommand extends BaseCommand
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'complyant:apply'; 
+    protected $signature = 'complyant:application'; 
 
     /**
      * The console command description.

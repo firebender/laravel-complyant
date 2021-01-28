@@ -11,14 +11,14 @@ class CreateApplicantCommand extends BaseCommand
      *
      * @var string
      */
-    protected $signature = 'complyant:apply'; 
+    protected $signature = 'complyant:applicant'; 
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Creates a ComplYant application record';
+    protected $description = 'Creates a ComplYant applicant record';
 
     /**
      * The UserService

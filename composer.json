@@ -17,6 +17,11 @@
             "FireBender\\Laravel\\Complyant\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "FireBender\\Laravel\\Complyant\\Tests\\": "tests/"
+        }
+    },    
     "extra": {
         "laravel": {
             "providers": [

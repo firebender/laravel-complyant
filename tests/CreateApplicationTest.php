@@ -2,9 +2,7 @@
 
 namespace FireBender\Laravel\Complyant\Tests;
 
-use Orchestra\Testbench\TestCase as OrchestraTestCase;
-
-class CreateApplicationTest extends OrchestraTestCase
+class CreateApplicationTest extends TestCase
 
 {
     /**

@@ -3,7 +3,7 @@
 namespace FireBender\Laravel\Complyant\Tests;
 
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
-use FireBender\Laravel\Widgets\Providers\PackageServiceProvider;
+use FireBender\Laravel\Complyant\Providers\PackageServiceProvider;
 
 class TestCase extends OrchestraTestCase
 

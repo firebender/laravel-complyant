@@ -29,11 +29,17 @@ class PackageServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        $this->mergeConfigFrom(
+            __DIR__ . '/../../config/complyant.php', 'complyant'
+        );
+
         $this->app->singleton('RestClient', function ($app) {
+
+            $user_agent = config('complyant.user_agent');
 
             $config = [
                 'headers' => [
-                    'User-Agent' => 'Jay Arabia User Agent'
+                    'User-Agent' => $user_agent
                 ]
             ];
 

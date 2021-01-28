@@ -1,0 +1,16 @@
+{
+    "name": "firebender/laravel-complyant",
+    "description": "Laravel ComplYant Package",
+    "type": "library",
+    "require-dev": {
+        "orchestra/testbench": "^6.9"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jay Arabia",
+            "email": "firebender.me@gmail.com"
+        }
+    ],
+    "require": {}
+}

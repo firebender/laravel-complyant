@@ -6,6 +6,7 @@ use Illuminate\Support\ServiceProvider;
 use FireBender\Laravel\Complyant\Console\Commands\CreateApplicantCommand;
 use FireBender\Laravel\Complyant\Console\Commands\CreateApplicationCommand;
 use GuzzleHttp\Client as GuzzleClient;
+use FireBender\Laravel\Complyant\Services\ComplyantService;
 
 class PackageServiceProvider extends ServiceProvider
 
@@ -44,6 +45,13 @@ class PackageServiceProvider extends ServiceProvider
             ];
 
             return new GuzzleClient($config);
+        });
+
+        $this->app->singleton('ComplyantService', function ($app) {
+
+            $client = $app->make('RestClient');
+
+            return new ComplyantService($client);
         });
     }
 
